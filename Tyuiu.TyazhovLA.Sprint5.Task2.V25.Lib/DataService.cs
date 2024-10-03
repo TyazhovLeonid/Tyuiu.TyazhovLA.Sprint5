@@ -24,13 +24,14 @@ namespace Tyuiu.TyazhovLA.Sprint5.Task2.V25.Lib
             {
                 for (int j = 0;j < rows; j++)
                 {
-                    if (j != cols-1) s += matrix[i, j] + ";";
-                    else s += matrix[i, j];
+                    if (j != cols-1) s = s + matrix[i, j] + ";";
+                    else s = s+ matrix[i, j];
                 }
                 if (i != rows-1) File.AppendAllText(path,s + Environment.NewLine);
                 else File.AppendAllText(path,s);
+                s = "";
             }
-            s = "";
+            
             return path;
         }
     }
