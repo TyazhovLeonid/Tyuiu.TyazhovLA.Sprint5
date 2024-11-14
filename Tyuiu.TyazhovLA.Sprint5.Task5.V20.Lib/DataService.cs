@@ -5,7 +5,7 @@ namespace Tyuiu.TyazhovLA.Sprint5.Task5.V20.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            /*
+            
             string text = File.ReadAllText(path);
             string[] strings = text.Split(" ");
             double[] chisla= new double[strings.Length];
@@ -17,15 +17,15 @@ namespace Tyuiu.TyazhovLA.Sprint5.Task5.V20.Lib
             double sum = 0;
             for (int i = 0;i < chisla.Length; i++)
             {
-                if ((chisla[i] >= -10) && (chisla[i]<=10))
+                if ((chisla[i] >= -10) && (chisla[i]<=10) && (chisla[i]%1==0))
                 {
                     sum += chisla[i];
                     count++;
                 }
             }
             double res = Math.Round(sum / count, 3);
-            */
-            double res = 2.439;
+            
+            //double res = 2.439;
             return res;
         }
     }
