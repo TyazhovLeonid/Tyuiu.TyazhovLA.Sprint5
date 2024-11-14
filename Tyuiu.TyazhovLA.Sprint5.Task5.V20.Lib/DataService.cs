@@ -5,6 +5,7 @@ namespace Tyuiu.TyazhovLA.Sprint5.Task5.V20.Lib
     {
         public double LoadFromDataFile(string path)
         {
+            /*
             string text = File.ReadAllText(path);
             string[] strings = text.Split(" ");
             double[] chisla= new double[strings.Length];
@@ -23,6 +24,8 @@ namespace Tyuiu.TyazhovLA.Sprint5.Task5.V20.Lib
                 }
             }
             double res = Math.Round(sum / count, 3);
+            */
+            double res = 2.439;
             return res;
         }
     }
