@@ -15,7 +15,7 @@ namespace Tyuiu.TyazhovLA.Sprint5.Task7.V7.Lib
             StringBuilder result = new StringBuilder();
             foreach (char c in stroka)
             {
-                if (!char.IsUpper(c))
+                if (!(c >= 'А' && c <= 'Я'))
                 {
                     result.Append(c);
                 }
